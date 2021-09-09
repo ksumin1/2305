@@ -62,9 +62,15 @@ while True:
     exclude_number = input("뺄 번호(enter치면 끝): ")
 # 리스트 제외
     list_class.remove(int(exclude_number))
+    print(list_class)
 # 그냥 enter면 반복 끝
     if exclude_number == '':
         break
 
 # 랜덤으로 섞기
+random.shuffle(list_class)
 # 출력
+# print(list_class)
+print('자리\t학생번호')
+for index,n in enumerate(list_class):
+    print(f'{index + 1}\t{n}')
