@@ -21,6 +21,9 @@ def load_history():
             # print(line.rstrip())
             line_data= line.rstrip().split('\t')
             count_list.append(line_data[1])
+        # 중복제거
+        count_list = set(count_list)    # 집합은 중복x
+        count_list = list(count_list)
         count_list.sort()
         return count_list[:3]
 
