@@ -2,7 +2,6 @@
 import pickle
 from Person import Person
 
-
 if __name__ == '__main__':
     번호1 = Person('공도윤', '곰세마리')
     번호4 = Person('김설', 'stay(저스틴비버)')
