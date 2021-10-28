@@ -4,6 +4,7 @@ try:
     print(list1[1])
     print(list1[2])
     print(list1[3])     # index error
+
 except IndexError as e:
     print(e)            # list index out of range
 except:
